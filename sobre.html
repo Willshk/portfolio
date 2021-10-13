@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Sobre</title>
+</head>
+<body>
+    <header>
+        <img src="haking.png" alt="">
+        <nav>
+            <ul class="menu">
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Contato</a></li>
+                <li><a href="">Rede Sociais</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section id="contanier">
+           
+            <img src="fotop.jpg" alt="Willian Developer">
+               <div>
+                   <h3></h3>
+                   <p><strong>Cusando</strong>: Análise e Desenvolvimento de sistemas</p>
+                   <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, magni! Ea magni maxime a sed nostrum, dolor, sapiente commodi labore molestias ipsam quibusdam voluptates explicabo? Qui aspernatur in sit architecto?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quas rerum nostrum eveniet voluptas possimus architecto ad inventore harum autem, quisquam id, in perspiciatis quia, odio numquam. Aperiam, non temporibus!</p>
+               </div>
+        </section>
+        <section class="con">
+            <h1>Conhecimentos</h1>
+        </section>
+        <section id="blocks">
+            <div class="bloco">
+                <img src="html.png" alt=""> 
+                <p>ProgessBar</p>
+            </div>
+            <div class="bloco">
+                <img src="css-200.png" alt="">
+                <p>ProgessBar</p>
+            </div>
+            <div class="bloco">
+                <img src="js.png" alt="">
+                <p>ProgessBar</p>
+            </div>
+        </section>
+    </main>
+    <footer id="rodape">
+        <div> 
+            <a href="https://www.linkedin.com/in/willian-andrade-a6a51b209/" target="_blank"><img src="inkedin.png" alt=""></a>
+        </div>
+            <div>
+                <a href="https://www.instagram.com/_willshk/"><img src="insta.png" alt="_blank"></a>
+            </div>
+       
+
+    </footer>
+
+    <script>
+        var saida = document.querySelector('h3')
+        function digitacao(texto , contador){
+
+          if(contador < texto.length){
+
+           setTimeout(()=>{
+             saida.textContent += texto.charAt(contador)
+             contador++
+             digitacao(texto , contador)
+
+           } , 120 )
+
+        }
+
+          }
+ digitacao("Willian Developer" , 0)
+
+
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Developer';
+    src: url('HackbotFreeTrial.otf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Conhecimento';
+    src: url('stadium.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor0: #b7b7b6;
+    --cor1: #C1FFD7;
+    --cor2: #99b7cf;
+    --cor3: #CAB8FF;
+
+    --fonte-principal: 'Developer'
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    background-color: var(--cor2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header img {
+    max-width: 100px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+
+.menu li a {
+    display: block;
+    text-decoration: none;
+    margin-left: 10px ;
+    padding: 10px;
+    color: #ffff;
+}
+
+.menu a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+main {
+    background-color: var(--cor0);
+}
+
+#contanier {
+    display: flex;
+    max-width: 800px;
+    padding: 50px 20px 20px 80px;
+}
+
+#contanier p {
+    text-align: justify;
+}
+
+#contanier img {
+    max-width: 250px;
+    border-radius: 50%;
+}
+
+#contanier > div {
+    margin: 50px 0px 0px 30px ;
+    background-color: #ffff;
+    padding: 10px;
+    border: 1px solid rgba(3, 1, 1, 0.171);
+    border-radius: 10px;
+}
+
+div > h3 {
+    font-family: 'Developer';
+    font-size: 1.3rem;
+    margin: 5px 0px 5px 0px;
+}
+
+.con {
+    margin: 50px 0px 30px 0px;
+}
+
+.con h1 {
+    text-align: center;
+    font-family: 'Conhecimento';
+    color: black;
+}
+
+#blocks {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.bloco p {
+    text-align: center;
+}
+
+#rodape {
+    background-color: #000000;
+    height: 99px;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    flex-wrap: wrap;
+}
+
+#rodape p,h1 {
+    color: #ffff;
+}
+
+#rodape > div {
+    margin-left: 20px;
+}
